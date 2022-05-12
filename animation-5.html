@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Animation 5
+		</title>
+		<style type="text/css">
+			.container-img {
+			  position: relative;
+			  width: 250px;
+			}
+			.image {
+			  display: block;
+			  width: 250px;
+			  height: 300px;
+			  transition:5s;
+			}
+			.overlay {
+			  position:absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  height: 100%;
+			  opacity:0;
+			  transition: 1s;
+			  background-color:rgba(255, 255, 255, 0.7);
+			}
+
+			.container-img:hover .overlay {
+			  opacity:1;
+			}
+			.container-img:hover .image {
+			  
+			  transform:rotate(360deg);
+
+			  /*
+				transform:scale(0.5);
+				transform:scale(1.5);
+				
+				transform:skew(90deg);
+				
+				transform:translate(300px,0px);
+				transform:translate(0px,400px);
+				transform:translate(300px,400px); 
+			  */
+			}
+			.text {
+			  color: rgb(21, 1, 1);
+			  font-size: 15px;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  -o-transform: translate(-50%, -50%);
+			  -moz-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  text-align: center;
+			  
+			}
+		</style>
+	</head>
+	<body>
+            <h2>Image Overlay Effect</h2> 
+            <h3> follow on instagram > dipshi_creation </h3> </body>
+		<div class="container-img">
+			<img src="C:\Users\prath\Pictures\pratham\IMG_20210815_101230.jpg" alt="Demo Image" class="image">
+            <img src="C:\Users\prath\Pictures\pratham\IMG_20210815_101225.jpg" alt="image" class="image">
+			<div class="overlay">
+				<div class="text">decorated by dipshi creation</div>
+		    </div>
+		</div>
+	</body>
+</html>
